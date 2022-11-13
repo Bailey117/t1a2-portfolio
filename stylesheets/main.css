@@ -1,5 +1,31 @@
-#openingpage {
-    width: 100%;
-    background-color: aliceblue;
+#openingpage { 
+    width: 100vw;
+    height: 100vh;
+    padding-top: 16vh;
+    background-color: rgb(208, 233, 255);
     text-align: center;
+}
+
+@font-face { /* this uses a custom font, finds in the docs folder and names it Roboto */
+    font-family: Roboto;
+    src: url("../docs/Roboto-Regular.ttf");
+}
+
+
+.pagebody {
+    font: 1.5vh/1.6vh Roboto;
+    background-color: black;
+}
+
+#openingcrawl {
+    align-self: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 60vw;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+    border: 2px groove rgb(148, 196, 199);
+
+
 }

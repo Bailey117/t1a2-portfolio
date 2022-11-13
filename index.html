@@ -10,6 +10,32 @@
 <body class="pagebody"> 
     <div id="openingpage">
 
+        <div id="openingcrawl">
+
+            <p>
+                Hello?  
+            </p>
+
+        </div>
+
+        <button id="search-button" href="./docs/search-symbol">Search</button>
+
+            <script>
+                const targetDiv = document.getElementById("openingpage");
+                const btn = document.getElementById("search-button");
+                btn.onclick = function () {
+                    if (targetDiv.style.display !== "none") {
+                        targetDiv.style.display ="none";
+                    } else {
+                        targetDiv.style.display = "block";
+                    }
+                    };
+                            /* https://sebhastian.com/javascript-show-hide-div-onclick-toggle
+                        
+            </script>
+
+
+
     </div>
 
 
