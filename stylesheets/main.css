@@ -6,9 +6,56 @@
 
 .pagebody {
     font: 1.5vh/1.6vh Roboto;
-    background-color: white;
+    background-color: solid ivory;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
+
+.sidebar {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #acc6c9;
+    padding: 0;
+    padding-right: 0.3vw;
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    border-right: 0.2vw solid #7f9698;
+}
+
+.sidebarlogo {
+    width: 4vw;
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+    padding-left: 0.3vw;
+
+}
+
+.sidebarlogo:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+#currentpage {
+    background-color: #7f9698;
+}
+
 
 .headers {
     background-color: aliceblue;
 }
+
+        /* Colour schemes :)
+        Beige: #c8b7a6
+
+        Perriwinkle: #7d94b5
+
+        Dusty Rose: #c29591
+
+        Maroon Brown: #703f37
+
+        Muted Green: #b6c199  */
