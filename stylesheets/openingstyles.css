@@ -29,6 +29,7 @@
     text-align: center;
     align-self: center;
     margin-right: 2%;
+    display: flex;
     width: 60vw;
     height: 7vh;
     font-size: 1.6vh;
