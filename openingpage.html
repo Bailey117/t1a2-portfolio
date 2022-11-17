@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- requirement to specify document type -->
+<html lang="en"> 
+
+<head> <!-- various accessability info-->
+    <title>Bailey Evans' Portfolio</title>
+    <link rel=stylesheet href=".\stylesheets\openingstyles.css"> <!-- this finds CSS styles from main.css in this repository -->
+    <link rel="icon" type="image/x-icon" href="./docs/baileyphoto.jpg"> <!-- sets webpage icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset=utf-8>
+</head>
+
+<body class="pagebody"> 
+    <div id="openingpage">
+
+        <div id="openingcrawl">
+
+            <p id="openingtext">
+                I'm looking for a full-stack web developer. 
+            </p>
+
+            <p id="search-reminder">
+                (kindly press search!)
+            </p>
+
+        </div>
+        <a id="search-button" href="./index.html">
+         <button id="search-button">Search</button>
+        </a>
+            <script>
+                const targetDiv = document.getElementById("openingpage");
+                const btn = document.getElementById("search-button");
+                btn.onclick = function () {
+                    if (targetDiv.style.display !== "none") {
+                        targetDiv.style.display ="none";
+                    } else {
+                        targetDiv.style.display = "block";
+                    }
+                    };
+                            /* https://sebhastian.com/javascript-show-hide-div-onclick-toggle */
+                        
+            </script>
+
+        </div>
+
+</body>
+
+</html>
