@@ -7,7 +7,7 @@
 
 [GitHub Repo](https://github.com/Bailey117/t1a2-portfolio)
 
-[Presentation Video](https://youtube.com)  
+[Presentation Video](https://youtu.be/8AacfseVG0w)  
 
 ## Website Description
 ### Purpose 
