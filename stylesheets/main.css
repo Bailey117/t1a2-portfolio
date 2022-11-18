@@ -100,9 +100,16 @@ h3 {
     color: #6f8171;
 }
 
+#p-resume {
+        margin-left: 4.4%;
+        margin-bottom: 3%;
+        font-size: 1.5vw;
+        color: #6f8171;
+}
 
 
-@keyframes reveal {
+
+/* @keyframes reveal {
     0% {
         color: ivory;
     }
@@ -124,7 +131,7 @@ h3 {
     100% {
         opacity: 100;
     }
-}
+} */
 
 .contentsection {
     display: flex;
@@ -198,6 +205,25 @@ footer {
 
 .credits:active {
     color: #e5fcd4;
+}
+
+.blogarticle {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    border-bottom: 0.2vw solid #90ad97;
+}
+
+.blogimages {
+    width: 65vw;
+}
+
+.blogcontent {
+    display: flex;
+    width: 62vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
 }
         /* Colour schemes :)
         Beige: #c8b7a6
