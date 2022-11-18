@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: ArchivoBlack;
-    src: url(../docs/ArchivoBlack-Regular.ttf);
+    src: url("../docs/ArchivoBlack-Regular.ttf");
 }
 
 .pagebody {
@@ -25,8 +25,9 @@
     padding: 0;
     margin: 0;
     border: 0;
-    height: 100vh;
+    height: 100%;
     border-right: 0.2vw solid #90ad97;
+    position: fixed;
 }
 
 .sidebarlogo {
@@ -35,7 +36,6 @@
     padding-bottom: 1.5vh;
     padding-left: 0.3vw;
     padding-right: 0.3vw;
-
 }
 
 .sidebarlogo:after {
@@ -55,12 +55,13 @@
 .bodyorganisation {
     display: flex;
     flex-direction: column;
+    transform: translateX(5.35vw);
 }
 
 #aboutmesection {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
 }
 
 #profilephoto {
@@ -87,9 +88,117 @@
 }
 
 h2 {
-    
+    margin-left: 4%;
+    font-size: 3.8vw;
+    color: #6f8171;
 }
 
+h3 {
+    margin-left: 4.4%;
+    margin-bottom: 3%;
+    font-size: 2vw;
+    color: #6f8171;
+}
+
+
+
+@keyframes reveal {
+    0% {
+        color: ivory;
+    }
+    80% {
+        color: ivory;
+    }
+    100% {
+        color: #566658;
+    }
+}
+
+@keyframes contentreveal {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.contentsection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+}
+
+.skillboxes {
+    background-color: #dce9cf;
+    border: 0.15vw solid #6b675a;
+    width: 16%;
+    text-align: center;
+
+
+}
+
+h4 {
+    margin-top: 3%;
+    margin-bottom: 1.8%;
+    font-size: 2vw;
+    color: #6b675a;
+}
+
+.skillphoto {
+    width: 13.5vw;
+    border-radius: 6%;
+}
+
+.skilltext {
+    color: #4e4c45; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#resume {
+    width: 22vw;
+    margin-left: 4%;
+    margin-bottom: 10%; 
+}
+
+footer {
+    background-color: #566658;
+    color: #1e1f1e;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    border-top: 0.2vw solid #90ad97;
+    margin-left: -0.6%;
+    padding-left: 1%;
+}
+
+.credits {
+    font-size: 0.8vw;
+    padding-left: 1%;
+}
+
+.credits:link {
+    color: #a0ac97;
+}
+
+.credits:hover {
+    color: #80a365
+}
+
+.credits:visited {
+    color: #7b8574
+}
+
+.credits:active {
+    color: #e5fcd4;
+}
         /* Colour schemes :)
         Beige: #c8b7a6
 
