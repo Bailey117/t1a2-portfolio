@@ -3,6 +3,10 @@
     src: url("../docs/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: ArchivoBlack;
+    src: url(../docs/ArchivoBlack-Regular.ttf);
+}
 
 .pagebody {
     font: 1.5vh/1.6vh Roboto;
@@ -17,20 +21,20 @@
 .sidebar {
     flex-direction: column;
     justify-content: space-between;
-    background-color: #acc6c9;
+    background-color: #dce9cf;
     padding: 0;
-    padding-right: 0.3vw;
     margin: 0;
     border: 0;
     height: 100vh;
-    border-right: 0.2vw solid #7f9698;
+    border-right: 0.2vw solid #90ad97;
 }
 
 .sidebarlogo {
     width: 4vw;
-    padding-top: 1vh;
+    padding-top: 1.5vh;
     padding-bottom: 1.5vh;
     padding-left: 0.3vw;
+    padding-right: 0.3vw;
 
 }
 
@@ -41,13 +45,34 @@
 }
 
 #currentpage {
-    background-color: #7f9698;
+    background-color: #7f9882;
+}
+
+.noncurrent:hover {
+    background-color: #a1cab0;
 }
 
 
+#profilephoto {
+    width: 19.5%;
+    height: 26%;
+    border-radius: 2.5vw;
+    margin-left: 1vw;
+}
 
-.headers {
-    background-color: aliceblue;
+
+.aboutmeheaders {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    font-size: 2.7vw;
+    font-family: ArchivoBlack;
+    color: #7f9882;
+}
+
+#thisisme {
+    padding-bottom: 2%;
 }
 
         /* Colour schemes :)

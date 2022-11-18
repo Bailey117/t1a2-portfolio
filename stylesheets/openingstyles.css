@@ -15,7 +15,7 @@
 
 #openingpage { 
     height: 100vh;
-    background-color: rgb(144, 203, 255);
+    background-color: #7f9882;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -42,17 +42,18 @@
 #openingtext {
     display: inline-block;
     white-space: nowrap;
-    border-right: 0.3vw solid black;
+    border-right: 0.3vw solid #566658;
     padding-right: 0.5vw;
     margin-top: 2vh;
     animation: blinking 1s infinite, typing 2.85s;
     overflow: hidden;
+    color: #566658;
 }
 
 #search-reminder {
     margin-top: -1.2vh;
     font-size: 1vh;
-    color: black;
+    color: #566658;
     animation: reveal 5s;
 }
 
@@ -80,7 +81,7 @@
         color: rgb(255, 255, 255);
     }
     100% {
-        color: black;
+        color: #566658;
     }
 }
 
