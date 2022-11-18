@@ -108,8 +108,8 @@ h3 {
 }
 
 
-
-/* @keyframes reveal {
+/* 
+@keyframes reveal {
     0% {
         color: ivory;
     }
@@ -146,8 +146,6 @@ h3 {
     width: 16%;
     text-align: center;
     overflow-wrap: break-word;
-
-
 }
 
 h4 {
@@ -226,13 +224,94 @@ footer {
     text-align: center;
 
 }
-        /* Colour schemes :)
-        Beige: #c8b7a6
 
-        Perriwinkle: #7d94b5
+@media screen and (max-width: 600px) {
+    .bodyorganisation {
+        margin-top: 16%;
+        transform: translateX(0vw);
+    }
+    .sidebarlogo {
+        width: 9vw;
+        align-self: center;
+        padding-top: 0.8vh;
+        padding-bottom: 1.5vh;
+        padding-left: 0.3vw;
+        padding-right: 0.3vw; 
+    }
+    .sidebar {
+        position:absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #dce9cf;
+        margin-bottom: 5%;
+        padding-bottom:6%;
+        width: 100%;
+        height: 3%;
+        border-bottom: 0.2vw solid #90ad97;
+        
+    }
+    .contentsection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8%;
+    }
+    h2 {
+        font-size:6vw;
+        text-align: center;
+        margin-left: -0.7vw;
+    }
+    h3 {
+        font-size: 3.8vw;
+        text-align: center;
+        margin-left: -0.8vw;
+    }
+    .aboutmeheaders {
+        font-size: 3vw;
+    }
 
-        Dusty Rose: #c29591
+    h4 {
+        font-size: 3.6vw;
+    }
+    .skillboxes {
+        background-color: #dce9cf;
+        border: 0.15vw solid #6b675a;
+        margin-bottom: 2%;
+        width: 80%;
 
-        Maroon Brown: #703f37
+    }
+    .skillphoto {
+        width: 40%;
+        border-radius: 6%;
+    }
+    .skilltext {
+        margin-top: 1vh;
+        line-height: 100%;
+        font-size: 3.2vw;
+    }
+    #profilephoto {
+        margin-left: 8vw;
+    }
 
-        Muted Green: #b6c199  */
+    #p-resume {
+        font-size: 3vw;
+        line-height: 100%;
+        text-align: center;
+        margin-left: -0.5vw;
+        padding-left: 0.2vw;
+        padding-right: 0.2vw;
+    }
+
+    #resume {
+       padding-left: 35vw;
+    }
+
+    .credits {
+        font-size: 2vw;
+        line-height: 100%;
+    }
+
+
+}
