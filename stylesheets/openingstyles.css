@@ -57,6 +57,7 @@
     animation: reveal 5s;
 }
 
+/* This animation adds the blinking cursor in the search box. */
 @keyframes blinking {
     25% {
         border-right: solid rgb(255, 255, 255);
@@ -64,6 +65,8 @@
     
 }
 
+
+/* This animation has text scroll to the side, as if it was being typed. */
 @keyframes typing {
     from {
         width: 0;
@@ -73,6 +76,8 @@
     }
 }
 
+
+/* This animation reveals the 'kindly press search' button as an indicator of how to proceed should any not know. */
 @keyframes reveal {
     0% {
         color: rgb(255, 255, 255);
@@ -92,6 +97,8 @@
     width: 7vw;
     font-size: 1.25vh;
 }
+
+/* All of below is responsiveness for various screen sizes. */
 
 @media screen and (max-width: 870px) {
     #openingcrawl {
