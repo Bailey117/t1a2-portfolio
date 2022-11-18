@@ -9,7 +9,7 @@
 }
 
 .pagebody {
-    font: 1.5vh/1.6vh Roboto;
+    font: 1.5vw/1.6vw Roboto;
     background-color: solid ivory;
     display: flex;
     flex-direction: row;
@@ -52,12 +52,23 @@
     background-color: #a1cab0;
 }
 
+.bodyorganisation {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutmesection {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
 
 #profilephoto {
-    width: 19.5%;
-    height: 26%;
+    width: 18%;
+    height: 100%;
     border-radius: 2.5vw;
     margin-left: 1vw;
+    margin-top: 0.8%;
 }
 
 
@@ -73,6 +84,10 @@
 
 #thisisme {
     padding-bottom: 2%;
+}
+
+h2 {
+    
 }
 
         /* Colour schemes :)
