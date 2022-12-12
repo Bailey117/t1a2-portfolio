@@ -1,5 +1,7 @@
 # t1a2-portfolio README by Bailey Evans  
 
+Netlify Status:  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e98a5cb-565b-4da4-b2cc-0173b79bed6a/deploy-status)](https://app.netlify.com/sites/baileyevans/deploys)
   
 
 ## Important Links
