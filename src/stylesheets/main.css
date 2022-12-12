@@ -114,13 +114,13 @@ h3 {
 /* Animations for slow page reveal. */
 @keyframes reveal {
     0% {
-        color: ivory;
+        opacity: 0;
     }
-    80% {
-        color: ivory;
+    50% {
+        opacity: 0;
     }
     100% {
-        color: #566658;
+        opacity: 100;
     }
 }
 
