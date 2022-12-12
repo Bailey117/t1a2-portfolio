@@ -351,3 +351,110 @@ footer {
     
 
 }
+
+@media screen and (min-width: 2000px) {
+    .sidebarlogo {
+        width: 3vw;
+    }
+    
+    #profilephoto {
+        width: 13vw;
+        height: 100%;
+    }
+    
+    .aboutmeheaders {
+        margin-top: 4%;
+        font-size: 1.8vw;
+    }
+
+    #aboutmesection {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3%;
+    }
+    
+    h2 {
+        margin-left: 4%;
+        font-size: 2vw;
+        color: #6f8171;
+        margin-bottom: 0;
+    }
+    
+    h3 {
+        margin-left: 4.2%;
+        margin-bottom: 2.5%;
+        font-size: 1.3vw;
+    }
+
+    .contentsection {
+        margin-bottom: 4%;
+    }
+    
+    .skillboxes {
+        background-color: #dce9cf;
+        border: 0.15vw solid #6b675a;
+        width: 12%;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    
+    h4 {
+        margin-top: 3%;
+        margin-bottom: 1.8%;
+        font-size: 1.6vw;
+        color: #6b675a;
+    }
+    
+    .skillphoto {
+        width: 8.91vw;
+        border-radius: 6%;
+    }
+    
+    .skilltext {
+        font-size: 1vw;
+    }
+    
+    #resume { /* styling for resume.*/
+        width: 14.52vw;
+        margin-left: 4%;
+        margin-bottom: 10%; 
+    }
+
+    #p-resume {
+        font-size: 1vw;
+    }
+    .credits {
+        font-size: 0.5vw;
+        line-height: 100%;
+    }
+
+    footer {
+        background-color: #566658;
+        color: #1e1f1e;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+        border-top: 0.2vw solid #90ad97;
+        margin-left: -1.6%;
+        padding-left: 1%;
+    }
+    /* styling for the blog articles */
+    .blogarticle {
+        padding-top: 5vw;
+        padding-bottom: 2vw;
+        border-bottom: 0.2vw solid #90ad97;
+    }
+    
+    .blogimages {
+        width: 45vw;
+    }
+    
+    .blogcontent {
+        display: flex;
+        width: 45vw;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+}
+}
