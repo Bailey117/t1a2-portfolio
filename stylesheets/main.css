@@ -27,8 +27,8 @@
     padding: 0;
     margin: 0;
     border: 0;
-    height: 100%;
-    border-right: 0.2vw solid #90ad97;
+    height: 100vmin;
+    border-right: 0.2vmin solid #90ad97;
     position: fixed;
 }
 
@@ -58,7 +58,7 @@
 .bodyorganisation {
     display: flex;
     flex-direction: column;
-    transform: translateX(5.35vw);
+    padding-left: 6vw;
 }
 
 #aboutmesection {
@@ -90,17 +90,37 @@
     padding-bottom: 2%;
 }
 
+.styleline {
+    height: 3vw;
+    width: 40vw;
+    justify-self: center;
+    margin-left: 15vw;
+    margin-bottom: 3vw;
+    animation: linereveal 1s;
+}
+
+@keyframes linereveal {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    100% {
+        with: 100%;
+        opacity: 100%;
+    }
+}
+
 h2 {
-    margin-left: 4%;
     font-size: 3.8vw;
     color: #6f8171;
+    padding-left: 2vw;
 }
 
 h3 {
-    margin-left: 4.4%;
     margin-bottom: 3%;
     font-size: 2vw;
     color: #6f8171;
+    padding-left: 2vw;
 }
 
 #p-resume {
