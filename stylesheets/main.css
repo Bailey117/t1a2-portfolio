@@ -275,6 +275,7 @@ footer {
     mask-size: cover;
     mask-position: 0% 0%;
 
+
     transition:
         -webkit-mask-position 600ms steps(19);
     }
