@@ -257,6 +257,42 @@ footer {
     font-size: 1.5vw;
 }
 
+.mask-container {
+    position: relative;
+}
+
+.masksize {
+    width: 30%;
+}
+
+.colour-image {
+    position: absolute;
+
+    -webkit-mask-image: url('../docs/imagemask.png');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: 0% 0%;
+    mask-image: url('../docs/imagemask.png');
+    mask-size: cover;
+    mask-position: 0% 0%;
+
+    transition:
+        -webkit-mask-position 600ms steps(19);
+    }
+
+
+
+@keyframes addColour {
+    0% {
+        -webkit-mask-position: 0% 0%;
+        mask-position: 0% 0%;
+    }
+    100% {
+        -webkit-mask-position: 100% 0%;
+        mask-position: 100% 0%;
+    }
+}
+
+
 /* responsiveness for various screen sizes, specifically phone screens */
 
 @media screen and (max-width: 600px) {
