@@ -85,3 +85,40 @@
         color: #703f37;
     }
 }
+
+.line {
+    margin-top: -38vh;
+    margin-left: 6vw;
+
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 900;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+  }
+
+@keyframes rectangledash {
+    0% {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 2100;
+        stroke-dashoffset: 0;  
+    }
+}
+
+.skillcard {
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: -2vh;
+}
+
