@@ -1,0 +1,88 @@
+@font-face { /* this uses a custom font, finds in the docs folder and names it Roboto */
+    font-family: Roboto;
+    src: url("../docs/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: ArchivoBlack;
+    src: url("../docs/ArchivoBlack-Regular.ttf");
+}
+
+.pagebody {
+    font: 1.5em/1.6em Roboto;
+    background-color: #0C1A1A;
+
+}
+
+.bodyorganisation {
+}
+
+
+#aboutmesection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-inline: 5vw;
+}
+
+
+.aboutmeheaders {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 200%;
+    align-self: center;
+    font-size: 1.8em;
+    font-family: ArchivoBlack;
+    color: #7f9882;
+}
+
+.mask-container {
+    position: relative;
+}
+
+.masksize {
+    width: 25rem;
+    border-radius: 25rem;
+}
+
+.colour-image {
+    position: absolute;
+
+    -webkit-mask-image: url('../docs/newimagemask.png');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: 0% 0%;
+    mask-image: url('../docs/imagemask.png');
+    mask-size: cover;
+    mask-position: 0% 0%;
+
+
+    transition:
+        -webkit-mask-position 600ms steps(19);
+    }
+
+
+@keyframes addColour {
+    0% {
+        -webkit-mask-position: 0% 0%;
+        mask-position: 0% 0%;
+    }
+    100% {
+        -webkit-mask-position: 100% 0%;
+        mask-position: 100% 0%;
+    }
+}
+
+@keyframes colourReveal {
+    0% {
+        color: #403a39;
+    }
+    80% {
+        color: #403a39;
+    }
+    100% {
+        color: #703f37;
+    }
+}
+
