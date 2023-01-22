@@ -40,10 +40,19 @@
        <stop stop-color="#0c1a1a" offset="1"></stop></linearGradient></defs></svg>
     </div>
 
-    <div class="skillcard">
-    <svg style="justify-self: center;" width="26rem" height="38rem">
-        <rect fill="none" width="26rem" height="38rem" style="stroke-width:2rem;stroke:red;stroke-linecap: round; animation: rectangledash 6s alternate forwards;animation-timing-function: ease;"></rect>
-      </svg>
+    <div id="skillcard">
+        <div style="position: absolute;">
+            <svg style="justify-self: center;" width="26rem" height="38rem">
+                <rect id="skillcardshape" fill="none" width="26rem" height="38rem" style="stroke-width:1rem;stroke: #7f9882;
+                stroke-linecap: round; animation-timing-function: ease;
+                stroke-dasharray: 2200;
+                stroke-dashoffset: -2200;"></rect>
+            </svg>
+        </div>
+        <div>
+
+
+        </div>
     </div>
 
 <!-- ---------------------------------------------------------------------- -->
@@ -55,6 +64,9 @@
 </div>
 
 </div>
+
+
+<script src="./scripts/script.js"></script>
 </body>
 </html>
 

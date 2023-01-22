@@ -103,22 +103,42 @@
 
 @keyframes rectangledash {
     0% {
-        stroke-dasharray: 600;
-        stroke-dashoffset: 0;
+        stroke-dasharray: 2200;
+        stroke-dashoffset: -2200;
     }
 
+    80% {
+        stroke-dasharray: 2200;
+        stroke-dashoffset: 0; 
+        filter: drop-shadow(0rem 0rem 0rem rgba(0, 0, 0, 0));
+        stroke: #6f8672;
+    }
     100% {
-        stroke-dasharray: 2100;
-        stroke-dashoffset: 0;  
+        filter: drop-shadow(0.3rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5)); 
+        stroke-dasharray: 2200;
+        stroke-dashoffset: 0; 
+        stroke: #aecfb2;
     }
 }
 
-.skillcard {
+#skillcard {
     width: 98vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     margin-top: -2vh;
+    visibility: hidden;
 }
 
+@keyframes textReveal {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
