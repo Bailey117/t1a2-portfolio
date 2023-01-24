@@ -1,0 +1,28 @@
+{
+    "skills":[
+        {
+            "language":"HTML",
+            "description":"HTML defines the most basic structures of the web - It is the building blocks of most websites."
+        },
+        {
+            "language":"CSS",
+            "description":"CSS takes HTML information and stylizes it using a range of colours, fonts, and animations."
+        },
+        {
+            "language":"JavaScript",
+            "description":"JS is a scripting language that enables fluidity, dynamic content, and complex interactions."
+        },
+        {
+            "language":"Python",
+            "description":"Python is a versatile tool in data management and automation."
+        },
+        {
+            "language":"Flask",
+            "description":"Flask allows a webpage to interact with Python libraries."
+        },
+        {
+            "language":"MySQL",
+            "description":"MySQL is a database management system useful for easily storing and access a variety of information."
+        }
+    ]
+}

@@ -87,8 +87,7 @@
 }
 
 .line {
-    margin-top: -38vh;
-    margin-left: 6vw;
+    margin-top: -17rem;
 
 }
 
@@ -121,14 +120,107 @@
     }
 }
 
-#skillcard {
-    width: 98vw;
+@keyframes hideRectangle {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;;
+        /* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+    }
+}
+
+@keyframes showRectangle {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;;
+    }
+}
+
+.skills {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    margin-top: -2vh;
+    justify-content: space-between;
+    z-index: -1;
+    justify-self: center;
+    max-width: 800px;
+}
+
+#skillcard {
+    width: 98vw;
+    background-color: #0C1A1A;
     visibility: hidden;
+    text-align: center;
+
+}
+
+#leftcard {
+    transform: scale(0.8);
+    transform-origin: 80rem;
+    -webkit-mask-image: -webkit-gradient(linear, left center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+#rightcard {
+    transform: scale(0.8);
+    transform-origin: -52rem;
+    z-index: -2;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+.leftchevron {
+    transition-property: scale, hue-rotate, saturate, brightness;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    width: 6rem;
+    /* translate: 17rem -22.5rem; */
+    filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+}
+
+.rightchevron {
+    transition-property: scale, hue-rotate, saturate, brightness;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    width: 6rem;
+    /* translate: 3.5rem -22.5rem; */
+    filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    width: 0;
+  }
+
+#leftbutton {
+    translate: 17rem -22.5rem;
+}
+
+#rightbutton {
+    translate: 3.5rem -22.5rem;
+}
+
+
+.leftchevron:hover {
+    filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+    scale: 1.1;
+}
+
+.rightchevron:hover {
+    filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+    scale: 1.1;
+}
+
+@keyframes chevron-hover {
+    0% {
+        filter: none;
+    }
+    100% {
+
+    }
 }
 
 @keyframes textReveal {
@@ -142,3 +234,23 @@
         opacity: 1;
     }
 }
+
+h2 {
+    font-size: 3.8vw;
+    color: #aecfb2;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: ivory;
+}
+
+#skillheader {
+    translate: 0 -40rem;
+}
+
+#skilltext {
+    translate: 0 -25rem;
+}
+
+
