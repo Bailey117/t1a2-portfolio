@@ -27,11 +27,22 @@ function nextcard() {
         cardnum = 0;
         document.getElementById("skillheader").innerHTML = skills.skills[cardnum].language;
         document.getElementById("skilltext").innerHTML = skills.skills[cardnum].description;
+        document.getElementById("rightheader").innerHTML = skills.skills[(cardnum+1)].language;
+        document.getElementById("righttext").innerHTML = skills.skills[(cardnum+1)].description;
+    }
+    else if (cardnum == 4) {
+        cardnum = cardnum + 1;
+        document.getElementById("skillheader").innerHTML = skills.skills[cardnum].language;
+        document.getElementById("skilltext").innerHTML = skills.skills[cardnum].description;
+        document.getElementById("rightheader").innerHTML = skills.skills[0].language;
+        document.getElementById("righttext").innerHTML = skills.skills[0].description;
     }
     else {
         cardnum = cardnum + 1;
         document.getElementById("skillheader").innerHTML = skills.skills[cardnum].language;
         document.getElementById("skilltext").innerHTML = skills.skills[cardnum].description;
+        document.getElementById("rightheader").innerHTML = skills.skills[(cardnum+1)].language;
+        document.getElementById("righttext").innerHTML = skills.skills[(cardnum+1)].description;
     }
 }
 

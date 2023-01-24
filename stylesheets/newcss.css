@@ -170,21 +170,22 @@
 }
 
 .leftchevron {
-    transition-property: scale, hue-rotate, saturate, brightness;
+    transition-property: scale, hue-rotate, saturate, brightness, opacity;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     width: 6rem;
     /* translate: 17rem -22.5rem; */
     filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+    opacity: 0.7;
 }
 
 .rightchevron {
-    transition-property: scale, hue-rotate, saturate, brightness;
+    transition-property: scale, hue-rotate, saturate, brightness, opacity;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     width: 6rem;
-    /* translate: 3.5rem -22.5rem; */
     filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+    opacity: 0.7;
 }
 
 button {
@@ -192,26 +193,27 @@ button {
     cursor: pointer;
     appearance: none;
     background-color: inherit;
-    width: 0;
   }
 
 #leftbutton {
-    translate: 17rem -22.5rem;
+    translate: 17rem -44.5rem;
 }
 
 #rightbutton {
-    translate: 3.5rem -22.5rem;
+    translate: 3.5rem -42rem;   
 }
 
 
 .leftchevron:hover {
     filter: hue-rotate(0deg) saturate(100%) brightness(100%);
     scale: 1.1;
+    opacity: 1;
 }
 
 .rightchevron:hover {
     filter: hue-rotate(0deg) saturate(100%) brightness(100%);
     scale: 1.1;
+    opacity: 1;
 }
 
 @keyframes chevron-hover {
@@ -254,4 +256,45 @@ p {
     max-width: 24rem;
 }
 
+#rightheader {
+    translate: -6rem -36rem;
+    scale: 0.7;
+    color: #686ea3;
+    z-index: -4;
+    position: relative;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,15%)))
+}
+
+#righttext {
+    scale: 0.8;
+    translate: -8rem -25rem;
+    max-width: 19rem;
+    position: relative;
+    z-index: -4;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.1)))
+
+}
+
+#leftheader {
+    translate: 18rem -36rem;
+    scale: 0.7;
+    color: #686ea3;
+    z-index: -4;
+    position: relative;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,15%)))
+}
+
+#lefttext {
+    scale: 0.8;
+    translate: 16rem -25rem;
+    max-width: 19rem;
+    position: relative;
+    z-index: -4;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.1)))
+
+}
 
