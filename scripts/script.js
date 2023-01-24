@@ -26,14 +26,29 @@ function nextcard() {
     if (cardnum >= 5) {
         cardnum = 0;
         document.getElementById("skillheader").innerHTML = skills.skills[cardnum].language;
+        document.getElementById("skilltext").innerHTML = skills.skills[cardnum].description;
     }
     else {
         cardnum = cardnum + 1;
         document.getElementById("skillheader").innerHTML = skills.skills[cardnum].language;
+        document.getElementById("skilltext").innerHTML = skills.skills[cardnum].description;
+    }
+}
+
+function prevcard() {
+    if (cardnum <= 0) {
+        cardnum = 5;
+        document.getElementById("skillheader").innerHTML = skills.skills[cardnum].language;
+        document.getElementById("skilltext").innerHTML = skills.skills[cardnum].description;
+    }
+    else {
+        cardnum = cardnum - 1;
+        document.getElementById("skillheader").innerHTML = skills.skills[cardnum].language;
+        document.getElementById("skilltext").innerHTML = skills.skills[cardnum].description;
     }
 
 }
-
+document.getElementById("leftbutton").addEventListener("click", prevcard)
 document.getElementById("rightbutton").addEventListener("click", nextcard)
 window.addEventListener("scroll", scrollAnim);
 

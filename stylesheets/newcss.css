@@ -250,7 +250,8 @@ p {
 }
 
 #skilltext {
-    translate: 0 -25rem;
+    translate: 1rem -25rem;
+    max-width: 24rem;
 }
 
 
