@@ -15,7 +15,7 @@
 
 #openingpage { 
     height: 100vh;
-    background-color: #7f9882;
+    background-color: #0C1A1A;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -42,18 +42,18 @@
 #openingtext {
     display: inline-block;
     white-space: nowrap;
-    border-right: 0.3vw solid #566658;
+    border-right: 0.3vw solid #0C1A1A;
     padding-right: 0.5vw;
     margin-top: 2vh;
     animation: blinking 1s infinite, typing 2.85s;
     overflow: hidden;
-    color: #566658;
+    color: #0C1A1A;
 }
 
 #search-reminder {
     margin-top: -1.2vh;
     font-size: 1vh;
-    color: #566658;
+    color: #0C1A1A;
     animation: reveal 5s;
 }
 
