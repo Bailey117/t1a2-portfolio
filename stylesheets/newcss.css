@@ -327,11 +327,40 @@ p {
 }
 
 
+.contactsection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+}
 
+/* Code for the styling/placement of the sets of three boxes - present in the about me page and contacts page. */
+.contactboxes {
+    background-color: #1a2e2e;
+    border: 0.15vw solid #aecfb2;
+    width: 16%;
+    text-align: center;
+    overflow-wrap: break-word;
+}
 
+h4 {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    font-size: 2vw;
+    color: #7f9882;
+}
 
+.contactphoto {
+    width: 13.5vw;
+    border-radius: 6%;
+}
 
-
+.contacttext {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
 
 
 
@@ -363,7 +392,6 @@ p {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        padding-inline: 5vw;
     }
     
     
@@ -448,19 +476,11 @@ p {
         translate: -23vh 170vw;
         padding-bottom: 2rem;
         padding-top: 2rem;
+        transform: rotate(180deg)
     }
 
     .rightchevron {
-        transition-property: scale, hue-rotate, saturate, brightness, opacity;
-        transition-duration: 200ms;
-        transition-timing-function: ease-out;
-        width: 6rem;
-        filter: hue-rotate(215deg) saturate(90%) brightness(120%);
-        opacity: 0.7;
-        display: flex;
-        z-index: 20;
-        visibility: visible;
-        translate: -23vh 0vw;
+        display: none;
     }
 
     button {
@@ -480,11 +500,7 @@ p {
     }
 
     #rightbutton {
-        display: flex;
-        background-color: red;
-        opacity: 1;
-        visibility: visible;
-        z-index: 20;
+        display: none;
     }
 
 
@@ -535,6 +551,26 @@ p {
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1600px) {
+    .skills {
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+    #rightheader {
+        translate: -17rem -36rem;
+    }
+}
 
+@media screen and (min-width: 2000px) {
+    .skills {
+        justify-content: space-evenly;
+        max-width: 90%;
+        padding-left: 4vw;
+    }
+    #rightheader {
+        translate: -20rem -36rem;
+    }
+    #skillheader {
+        font-size: 3vw;
+    }
 }
