@@ -339,6 +339,25 @@ p {
 
 
 @media screen and (max-width: 600px) {
+
+    @keyframes hideRectangle {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 100%;;
+            /* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+        }
+    }
+    
+    @keyframes showRectangle {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 100%;;
+        }
+    }
     #aboutmesection {
         display: flex;
         flex-direction: column;
@@ -357,8 +376,165 @@ p {
         font-size: 0.9em;
         font-family: ArchivoBlack;
         color: #7f9882;
+    }
+    .masksize {
+        width: 22rem;
+        border-radius: 25rem;
+    }
+
+    .colour-image {
+        position: absolute;
+
+        -webkit-mask-image: url('../docs/newimagemask.png');
+        -webkit-mask-size: cover;
+        -webkit-mask-position: 0% 0%;
+        mask-image: url('../docs/imagemask.png');
+        mask-size: cover;
+        mask-position: 0% 0%;
+
+
+        transition:
+            -webkit-mask-position 600ms steps(19);
+        }
 
 
 
+
+
+
+
+
+
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: -1;
+        justify-self: center;
+        margin-top: 0rem;
+    }
+
+    #skillcard {
+        background-color: #0C1A1A;
+        visibility: visible;
+        text-align: center;
+        z-index: 10;
+        justify-content: center;
+        justify-self: center;
+        padding-left: 2.5rem;
+
+    }
+
+    #skillcardshape  {
+        transform: scale(0.7)
+    }
+
+    #leftcard {
+        display: none;
+    }
+
+    #rightcard {
+        display: none;
+    }
+
+    .leftchevron {
+        width: 10vw;
+        /* translate: 17rem -22.5rem; */
+        filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+        opacity: 0.7;
+        display: flex;
+        visibility: visible;
+        translate: -23vh 170vw;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .rightchevron {
+        transition-property: scale, hue-rotate, saturate, brightness, opacity;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        width: 6rem;
+        filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+        opacity: 0.7;
+        display: flex;
+        z-index: 20;
+        visibility: visible;
+        translate: -23vh 0vw;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        background-color: inherit;
+        visibility: visible;
+        /* transform-origin: 20rem 20rem; */
+    }
+
+    #leftbutton {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        width: 0;
+    }
+
+    #rightbutton {
+        display: flex;
+        background-color: red;
+        opacity: 1;
+        visibility: visible;
+        z-index: 20;
+    }
+
+
+    h2 {
+        font-size: 3.8vw;
+        color: #aecfb2;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: ivory;
+    }
+
+    #skillheader {
+        translate: -2rem -40rem;
+        opacity: 0;
+        font-size: 15vw;
+    }
+
+    #skilltext {
+        translate: 2rem -40rem;
+        max-width: 60vw;;
+        opacity: 0;
+    }
+
+    #rightheader {
+        display: none;
+    }
+
+    #righttext {
+        display: none;
+
+    }
+
+    #leftheader {
+        display: none;
+    }
+
+    #lefttext {
+        display: none;
+    }
+
+    #leftside{
+        display: flex;
+    }
+    #rightside{
+        display: none;
+    }
 }
+
+@media screen and (min-width: 2000px) {
+
 }
