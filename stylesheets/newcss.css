@@ -1,0 +1,576 @@
+@font-face { /* this uses a custom font, finds in the docs folder and names it Roboto */
+    font-family: Roboto;
+    src: url("../docs/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: ArchivoBlack;
+    src: url("../docs/ArchivoBlack-Regular.ttf");
+}
+
+.pagebody {
+    font: 1.5em/1.6em Roboto;
+    background-color: #0C1A1A;
+
+}
+
+.bodyorganisation {
+}
+
+
+#aboutmesection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-inline: 5vw;
+}
+
+
+.aboutmeheaders {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 200%;
+    align-self: center;
+    font-size: 1.8em;
+    font-family: ArchivoBlack;
+    color: #7f9882;
+}
+
+.mask-container {
+    position: relative;
+}
+
+.masksize {
+    width: 25rem;
+    border-radius: 25rem;
+}
+
+.colour-image {
+    position: absolute;
+
+    -webkit-mask-image: url('../docs/newimagemask.png');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: 0% 0%;
+    mask-image: url('../docs/imagemask.png');
+    mask-size: cover;
+    mask-position: 0% 0%;
+
+
+    transition:
+        -webkit-mask-position 600ms steps(19);
+    }
+
+
+@keyframes addColour {
+    0% {
+        -webkit-mask-position: 0% 0%;
+        mask-position: 0% 0%;
+    }
+    100% {
+        -webkit-mask-position: 100% 0%;
+        mask-position: 100% 0%;
+    }
+}
+
+@keyframes colourReveal {
+    0% {
+        color: #403a39;
+    }
+    80% {
+        color: #403a39;
+    }
+    100% {
+        color: #703f37;
+    }
+}
+
+.line {
+    margin-top: -17rem;
+
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 900;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+  }
+
+@keyframes rectangledash {
+    0% {
+        stroke-dasharray: 2200;
+        stroke-dashoffset: -2200;
+    }
+
+    80% {
+        stroke-dasharray: 2200;
+        stroke-dashoffset: 0; 
+        filter: drop-shadow(0rem 0rem 0rem rgba(0, 0, 0, 0));
+        stroke: #6f8672;
+        fill: #0C1A1A;
+    }
+    100% {
+        filter: drop-shadow(0.3rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5)); 
+        stroke-dasharray: 2200;
+        stroke-dashoffset: 0; 
+        stroke: #aecfb2;
+        fill:#1a2e2e;
+    }
+}
+
+@keyframes hideRectangle {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;;
+        /* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+    }
+}
+
+@keyframes showRectangle {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: -1;
+    justify-self: center;
+    width: 98vw;
+    margin-top: 5rem;
+}
+
+#skillcard {
+    background-color: #0C1A1A;
+    visibility: hidden;
+    text-align: center;
+    z-index: 10;
+
+}
+
+#leftcard {
+    transform: scale(0.8);
+    transform-origin: 110rem;
+    -webkit-mask-image: -webkit-gradient(linear, left center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+#rightcard {
+    transform: scale(0.8);
+    transform-origin: -84rem;
+    z-index: -2;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.leftchevron {
+    transition-property: scale, hue-rotate, saturate, brightness, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    width: 6rem;
+    /* translate: 17rem -22.5rem; */
+    filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+    opacity: 0.7;
+}
+
+.rightchevron {
+    transition-property: scale, hue-rotate, saturate, brightness, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    width: 6rem;
+    filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+    opacity: 0.7;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+  }
+
+#leftbutton {
+    translate: 22rem -42rem;
+}
+
+#rightbutton {
+    translate: -3rem -42rem;
+}
+
+
+.leftchevron:hover {
+    filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+    scale: 1.1;
+    opacity: 1;
+}
+
+.rightchevron:hover {
+    filter: hue-rotate(0deg) saturate(100%) brightness(100%);
+    scale: 1.1;
+    opacity: 1;
+}
+
+@keyframes chevron-hover {
+    0% {
+        filter: none;
+    }
+    100% {
+
+    }
+}
+
+@keyframes textReveal {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 3.8vw;
+    color: #aecfb2;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: ivory;
+}
+
+#skillheader {
+    translate: 0 -40rem;
+    opacity: 0;
+}
+
+#skilltext {
+    translate: 1rem -25rem;
+    max-width: 24rem;
+    opacity: 0;
+}
+
+#rightheader {
+    translate: -14rem -36rem;
+    scale: 0.7;
+    color: #686ea3;
+    z-index: -4;
+    position: relative;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,15%)));
+}
+
+#righttext {
+    scale: 0.8;
+    translate: -14rem -25rem;
+    max-width: 19rem;
+    position: relative;
+    z-index: -4;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.1)));
+    filter: blur(0.2rem);
+    z-index: -4;
+
+}
+
+#leftheader {
+    translate: 24rem -36rem;
+    scale: 0.7;
+    color: #686ea3;
+    z-index: -4;
+    position: relative;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,15%)));
+}
+
+#lefttext {
+    scale: 0.8;
+    translate: 22rem -25rem;
+    max-width: 19rem;
+    position: relative;
+    z-index: -4;
+    opacity: 0.4;
+    -webkit-mask-image: -webkit-gradient(linear, right center, center center, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.1)));
+    filter: blur(0.2rem);
+
+}
+
+#leftside{
+    opacity: 0;
+    transition-property: visibility;
+    transition: ease 0s;
+}
+#rightside{
+    opacity: 0;
+    transition-property: visibility;
+    transition: ease 0s;
+}
+
+@keyframes showside {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.contactsection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+}
+
+/* Code for the styling/placement of the sets of three boxes - present in the about me page and contacts page. */
+.contactboxes {
+    background-color: #1a2e2e;
+    border: 0.15vw solid #aecfb2;
+    width: 16%;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+h4 {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    font-size: 2vw;
+    color: #7f9882;
+}
+
+.contactphoto {
+    width: 13.5vw;
+    border-radius: 6%;
+}
+
+.contacttext {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    @keyframes hideRectangle {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 100%;;
+            /* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+        }
+    }
+    
+    @keyframes showRectangle {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 100%;;
+        }
+    }
+    #aboutmesection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    
+    .aboutmeheaders {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        line-height: 200%;
+        align-self: center;
+        font-size: 0.9em;
+        font-family: ArchivoBlack;
+        color: #7f9882;
+    }
+    .masksize {
+        width: 22rem;
+        border-radius: 25rem;
+    }
+
+    .colour-image {
+        position: absolute;
+
+        -webkit-mask-image: url('../docs/newimagemask.png');
+        -webkit-mask-size: cover;
+        -webkit-mask-position: 0% 0%;
+        mask-image: url('../docs/imagemask.png');
+        mask-size: cover;
+        mask-position: 0% 0%;
+
+
+        transition:
+            -webkit-mask-position 600ms steps(19);
+        }
+
+
+
+
+
+
+
+
+
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: -1;
+        justify-self: center;
+        margin-top: 0rem;
+    }
+
+    #skillcard {
+        background-color: #0C1A1A;
+        visibility: visible;
+        text-align: center;
+        z-index: 10;
+        justify-content: center;
+        justify-self: center;
+        padding-left: 2.5rem;
+
+    }
+
+    #skillcardshape  {
+        transform: scale(0.7)
+    }
+
+    #leftcard {
+        display: none;
+    }
+
+    #rightcard {
+        display: none;
+    }
+
+    .leftchevron {
+        width: 10vw;
+        /* translate: 17rem -22.5rem; */
+        filter: hue-rotate(215deg) saturate(90%) brightness(120%);
+        opacity: 0.7;
+        display: flex;
+        visibility: visible;
+        translate: -23vh 170vw;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        transform: rotate(180deg)
+    }
+
+    .rightchevron {
+        display: none;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        background-color: inherit;
+        visibility: visible;
+        /* transform-origin: 20rem 20rem; */
+    }
+
+    #leftbutton {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        width: 0;
+    }
+
+    #rightbutton {
+        display: none;
+    }
+
+
+    h2 {
+        font-size: 3.8vw;
+        color: #aecfb2;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: ivory;
+    }
+
+    #skillheader {
+        translate: -2rem -40rem;
+        opacity: 0;
+        font-size: 15vw;
+    }
+
+    #skilltext {
+        translate: 2rem -40rem;
+        max-width: 60vw;;
+        opacity: 0;
+    }
+
+    #rightheader {
+        display: none;
+    }
+
+    #righttext {
+        display: none;
+
+    }
+
+    #leftheader {
+        display: none;
+    }
+
+    #lefttext {
+        display: none;
+    }
+
+    #leftside{
+        display: flex;
+    }
+    #rightside{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .skills {
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+    #rightheader {
+        translate: -17rem -36rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .skills {
+        justify-content: space-evenly;
+        max-width: 90%;
+        padding-left: 4vw;
+    }
+    #rightheader {
+        translate: -20rem -36rem;
+    }
+    #skillheader {
+        font-size: 3vw;
+    }
+}
