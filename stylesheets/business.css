@@ -1,0 +1,40 @@
+@font-face { /* this uses a custom font, finds in the docs folder and names it Roboto */
+    font-family: Roboto;
+    src: url("../docs/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: ArchivoBlack;
+    src: url("../docs/ArchivoBlack-Regular.ttf");
+}
+
+.pagebody {
+    height: 100vh;
+    width: 100vw;
+    font: 1.5em/1.6em Roboto;
+    background-color: #b0a593;
+    margin: 0rem;
+    overflow: hidden;
+
+}
+h1 {
+    align-self: center;
+    font-size: 1.8em;
+    font-family: ArchivoBlack;
+    color: #2c3432;
+}
+
+#image-track > image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
