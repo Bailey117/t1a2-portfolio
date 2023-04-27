@@ -24,17 +24,36 @@ h1 {
     color: #2c3432;
 }
 
-#image-track > image {
-    width: 40vmin;
-    height: 56vmin;
+#image-track > .image {
+    width: 20vmin;
     object-fit: cover;
     object-position: center;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#image-track:hover > .image:not(:hover) {
+    width:10vmin;
+}
+
+
+
+
+
+#image-track>.image:nth-of-type(even) {
+    transform: translateY(-25%);
 }
 
 #image-track {
     display: flex;
     gap: 4vmin;
     position: absolute;
-    left: 50%;
-    right: 50%;
+    left: 4%;
+    right: 4%;
+    max-width: 92%;
 }
+
