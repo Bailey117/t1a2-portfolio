@@ -64,19 +64,21 @@ h1 {
 .imgtext {
     position: absolute;
     top: -1.9vmin;
-    color: #fff;
+    color: #b0a593;
     visibility: hidden;
     opacity: 0;
     transition: ease 380ms;
     transition-delay: 600ms;
     width: 30vmin;
     height:15vmin;
-    background-color: rgba(176, 165, 147, 0.3);
+    background-color: rgba(44, 43, 43, 0.3);
     text-align: center;
     padding-top: 12vmin;
     padding-bottom: 3vmin;
-    text-shadow: 1.5px 1.5px #534540;
+    text-shadow: 2px 2px #6f4d2a;
 }
+
+
 
 
 .imgwrap:not(:hover) .imgtext {
