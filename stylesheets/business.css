@@ -1,3 +1,13 @@
+/*  Colour Palette 
+
+    #b0a593 - pastel cream
+    #534540 - earthly brown
+    #2c2b2b - sunset navy cloud
+    #6f4d2a - soft orange brown
+    #2c3432 - gentle lake dark green
+
+*/
+
 @font-face { /* this uses a custom font, finds in the docs folder and names it Roboto */
     font-family: Roboto;
     src: url("../docs/Roboto-Regular.ttf");
@@ -12,7 +22,8 @@
     height: 100vh;
     width: 100vw;
     font: 1.5em/1.6em Roboto;
-    background-color: #b0a593;
+    background-color: #2c3432;
+    /* background-color: #b0a593; */
     margin: 0rem;
     overflow: hidden;
 
@@ -21,11 +32,13 @@ h1 {
     align-self: center;
     font-size: 1.8em;
     font-family: ArchivoBlack;
-    color: #2c3432;
+    color: #b0a593;
+    /* color: #2c3432; */
 }
 
-#image-track > .image {
-    width: 20vmin;
+#image-track > .imgwrap > .image {
+    width: 10vmin;
+    height: 30vmin;
     object-fit: cover;
     object-position: center;
     user-drag: none;
@@ -34,26 +47,64 @@ h1 {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    transition: ease 600ms;
+    box-shadow: 4px 00px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-#image-track:hover > .image:not(:hover) {
+/* #image-track:hover > .image:not(:hover) {
     width:10vmin;
+} */
+
+#image-track > .imgwrap:hover > .image {
+    width: 30vmin;
+    height: 30vmin;
 }
 
 
-
-
-
-#image-track>.image:nth-of-type(even) {
-    transform: translateY(-25%);
+.imgtext {
+    position: absolute;
+    top: -1.9vmin;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 380ms;
+    transition-delay: 600ms;
+    width: 30vmin;
+    height:15vmin;
+    background-color: rgba(176, 165, 147, 0.3);
+    text-align: center;
+    padding-top: 12vmin;
+    padding-bottom: 3vmin;
+    text-shadow: 1.5px 1.5px #534540;
 }
+
+
+.imgwrap:not(:hover) .imgtext {
+    transition-delay: 0ms;
+    transition: opacity 300ms;
+}
+.imgwrap:hover .imgtext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#image-track > .image:hover + #image-track > .image:nth-of-type(even) {
+    transform: translateY(0%);
+}
+
+
+#image-track > .imgwrap:nth-of-type(even) {
+    transform: translateY(-40%);
+}
+
+
 
 #image-track {
     display: flex;
+    justify-content: center;
     gap: 4vmin;
     position: absolute;
-    left: 4%;
-    right: 4%;
-    max-width: 92%;
+    width: 100%;
 }
 
